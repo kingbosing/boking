@@ -50,7 +50,7 @@
             king.strokeStyle='green';
             king.stroke();
             king.restore();
-
+//			setNumber(i);
             if(i>=12){
                 clearInterval(id);
                 setRing()
@@ -72,12 +72,14 @@
             king.arc(60 * j + 140, 450 - set[j] * 2, 10, 0, Math.PI * 2, true);
             king.stroke();
             king.closePath();
+            
+            setNumber(j)
         }
     }
 
     
     for(var j=0;j<set.length;j++){
-
+//		setNumber(j)
         king.save();
         king.beginPath();
         king.fillStyle='green';
@@ -86,6 +88,14 @@
         king.fillText((j+1)+'月',60*j+120,480);
         king.restore();
     }
-
+ function setNumber(j) {
+            king.save();
+            king.beginPath();
+            king.fillStyle = 'green';
+            king.font = '15px 宋体';
+            king.closePath();
+            king.fillText(set[j], 60 * j + 130, 445 - set[j] * 2);
+            king.restore();
+    }
     
 })();

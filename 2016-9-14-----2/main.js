@@ -49,6 +49,7 @@
             king.lineTo(60*j+120,450-speed*2);
             if(speed>=set[j]){
                 clearInterval(id);
+                setNumber(j);
             }
             king.closePath();
             king.strokeStyle='red';
@@ -59,36 +60,36 @@
 
     }
 
-    function setNet() {
-        i=0;
-        king.beginPath();
-        king.moveTo(100,450);
-        var id=setInterval(function () {
-            // console.log(i);
-            king.lineTo(60*i+140,450-set[i]*2);
-            i++;
-            king.strokeStyle='green';
-
-            king.stroke();
-            king.restore();
-            if(i>=12){
-                setNumber();
-                clearInterval(id);
-
-            }
-        },1000);
-        king.closePath();
-
-
-
-    }
+//  function setNet() {
+//      i=0;
+//      king.beginPath();
+//      king.moveTo(100,450);
+//      var id=setInterval(function () {
+//          // console.log(i);
+//          king.lineTo(60*i+140,450-set[i]*2);
+//          i++;
+//          king.strokeStyle='green';
+//
+//          king.stroke();
+//          king.restore();
+//          if(i>=12){
+//              setNumber();
+//              clearInterval(id);
+//
+//          }
+//      },1000);
+//      king.closePath();
+//
+//
+//
+//  }
 
     var set=[60,90,150,130,170,190,125,175,155,165,155,145];
 
   
     for(var j=0;j<set.length;j++){
         setTime(j);
-        setNumber();
+//      setNumber();
         
         king.save();
         king.beginPath();
@@ -99,7 +100,7 @@
         king.restore();
     }
 
-    function setNumber() {
+    function setNumber(j) {
             king.save();
             king.beginPath();
             king.fillStyle = 'green';
