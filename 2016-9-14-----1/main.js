@@ -28,16 +28,12 @@
 
         king.save();
         king.beginPath();
-        // king.clearRect(x, y-10,30, 20);
         king.fillStyle='green';
         king.font='15px 宋体';
         king.closePath();
         king.fillText(20*i,60,455-40*i);
         king.restore();
     }
-
-
-    
     function setNet() {
         i=0;
         king.beginPath();
@@ -50,21 +46,17 @@
             king.strokeStyle='green';
             king.stroke();
             king.restore();
-//			setNumber(i);
             if(i>=12){
                 clearInterval(id);
                 setRing()
             }
         },500);
         king.closePath();
-
-
     }
 
     var set=[60,90,150,130,170,190,125,175,155,165,155,145];
 
     setNet();
-    
     function setRing() {
         for(var j=0;j<set.length;j++) {
             king.beginPath();
@@ -77,9 +69,7 @@
         }
     }
 
-    
     for(var j=0;j<set.length;j++){
-//		setNumber(j)
         king.save();
         king.beginPath();
         king.fillStyle='green';
