@@ -1,0 +1,7 @@
+*{
+    margin:0;padding:0;
+}
+#canvas{
+    /*background: #fddfdf;*/
+    margin: 50px 400px;
+}
