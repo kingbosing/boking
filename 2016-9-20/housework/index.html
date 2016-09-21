@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div{
+            height: 380px;
+            width: 380px;
+            float:left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #img1{
+
+            transition:transform 2s linear;
+        }
+        #div1:hover #img1{
+            opacity: 0.7;
+            transform:translate(-20px,0);
+        }
+        #div1_con{
+            transition:transform 2s linear;
+        }
+        #div1:hover #div1_con{
+            transform: translate(50px,-100px);
+        }
+        #div1_c1{
+            height:200px;
+            width:200px;
+            border:1px solid #333333;
+            transform-origin:0 100px;
+            transition:transform 2s linear;
+        }
+        #div1:hover #div1_c1{
+            transform: rotate(-10deg); ;
+        }
+
+
+
+        .div2_{height:1px;;background: #636;}
+        #div2_a{
+            width:1px;
+            position: absolute;
+            top:50px;left:200px;
+            transition:transform 2s linear;
+        }
+        #div2:hover #div2_a{
+            transform: scale(400,1);
+            /*-webkit-transform: scale(400,1);*/
+            /*-moz-transform: scale(400,1);*/
+            /*-ms-transform: scale(400,1);*/
+        }
+        #div2_b{
+            width:1px;
+            position: absolute;
+            top:330px;left:200px;
+            transition:transform 2s linear;
+        }
+        #div2:hover #div2_b{
+            transform: scale(400,1);
+
+        }
+        #div2_c{
+            width:1px;
+            position: absolute;
+            top:200px;left:50px;
+            transition:transform 2s linear;
+        }
+        #div2:hover #div2_c{
+            transform: scale(1,400);
+
+        }
+        #div2_d{
+            width:1px;
+            position: absolute;
+            top:200px;left:330px;
+            transition:transform 2s linear;
+        }
+        #div2:hover #div2_d{
+            transform: scale(1,400);
+
+        }
+
+        #img2{
+            transition:transform 2s linear;
+        }
+        #div2:hover #img2{
+            opacity: 0.7;
+            transform:scale(1.2,1.2);
+        }
+
+
+
+        #div3{
+            position: relative}
+        #img3{
+            transition:transform 2s linear;
+        }
+        #div3:hover #img3{
+            opacity: 0.7;
+            transform:scale(0.9,0.9);
+        }
+        #div3_con{
+            height:380px;
+            width:380px;
+            position: absolute;
+            top:0;
+            left:-380px;
+            z-index:2;
+            transition:transform 2s linear;
+        }
+        #div3:hover #div3_con{
+            display: block;
+            transform:translate(380px,0);
+        }
+        .a3{
+            height:50px;
+            width:80px;
+            background: #333333;
+            margin:129px auto;
+
+        }
+
+        #div4{
+            position: relative}
+        #img4{
+            transition:transform 2s linear;
+        }
+        #div4:hover #img4{
+            transform:rotate(60deg);
+        }
+        #div4_con{
+            height:400px;
+            width:4000px;
+            background: #00A000;
+            position: absolute;
+            top:400px;
+            transform-origin:0 0;
+            transition: transform 2s linear;
+        }
+        #div4:hover #div4_con{
+            transform:rotate(-30deg);
+        }
+        #div4_con1{
+            /*height:100px;*/
+            /*width:200px;*/
+            /*border:1px solid #00ff00;*/
+            /*background: #00A000;*/
+            position: absolute;
+            top:-20px;
+            transform-origin:0 0;
+            transition: transform 2s linear;
+        }
+        #div4:hover #div4_con1{
+            transform:skew(50deg,60deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="div1" class="div">
+    <img src="1.jpg" alt="" id="img1">
+    <div id="div1_con">回来吧，回来呦！</div>
+    <div id="div1_c1"></div>
+</div>
+<div id="div2" class="div">
+    <img src="2.jpg" alt="" id="img2">
+    <div id="div2_con">
+        <div id="div2_a" class="div2_"></div>
+        <div id="div2_b" class="div2_"></div>
+        <div id="div2_c" class="div2_"></div>
+        <div id="div2_d" class="div2_"></div>
+    </div>
+</div>
+<div id="div3" class="div">
+    <img src="3.jpg" alt="" id="img3">
+    <div id="div3_con">
+        <div id="3a" class="a3">来也匆匆</div>
+        <div id="3b" class="a3">去也匆匆</div>
+    </div>
+</div>
+<div id="div4" class="div">
+    <img src="4.jpg" alt="" id="img4">
+    <div id="div4_con"></div>
+    <div id="div4_con1">好孩子</div>
+
+</div>
+
+</body>
+</html>
