@@ -1,0 +1,47 @@
+.item{
+    /*height:600px;*/
+}
+.item img{
+
+    margin:0 auto;
+}
+
+.carousel-caption{
+    color:#00e51e;
+    font-size: 35px;
+}
+.carousel-caption b{
+    font-size: 20px;
+    color: #ccc;
+}
+.row{
+    overflow: hidden;
+    /*border:1px solid #ccc;*/
+}
+.row img{
+    width:90%
+}
+.row:nth-child(1){
+    height: 100px;
+}
+.row:nth-child(1) p{
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    color:#00e51e;
+}
+.row:nth-child(2){
+    height: 450px;
+}
+.row:nth-child(3){
+    height: 100px;
+}
+.btn-group-vertical a{
+    margin:20px 0;
+}
+
+.min{
+    overflow: hidden;
+    margin:0 auto;
+    width: 80%;
+}

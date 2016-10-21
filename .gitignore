@@ -1,0 +1,9 @@
+*.mp3
+*.mp4
+*.zip
+*.jar
+*.iso
+*.cab
+*.7z
+
+node_modules/
