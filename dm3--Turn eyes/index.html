@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0}
+        #a{ width:600px;height:600px;border: 1px solid #000;border-radius:50%;position:relative}
+        #b{
+            width:200px;height:220px;border: 1px solid #000;border-radius:50%;position:absolute;top:100px;left:50px}
+        #b1{height:10px;width:100px;
+            background: #fff;position: absolute;top:110px;
+            left:100px;
+            transform-origin:0px 5px;
+        }
+        #b2{height:80px;width:80px;
+            background: #f00;position: absolute;top:-40px;
+            left:20px;
+            border-radius:50%
+        }
+        #c{
+            width:200px;height:220px;border: 1px solid #000;border-radius:50%;position:absolute;top:100px;left:340px}
+        #c1{height:10px;width:100px;
+            background: #fff;position: absolute;top:110px;
+            left:100px;
+            transform-origin:0px 5px;
+        }
+        #c2{height:80px;width:80px;
+            background: #f00;position: absolute;top:-40px;
+            left:20px;
+            border-radius:50%
+        }
+    </style>
+</head>
+<body>
+<div id="a">
+    <div id="b">
+        <div id="b1"><div id="b2"></div></div>
+
+    </div>
+    <div id="c">
+        <div id="c1"><div id="c2"></div></div>
+
+    </div>
+    <div id="c"></div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
