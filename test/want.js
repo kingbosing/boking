@@ -1,0 +1,1 @@
+typewriter('code',50)
